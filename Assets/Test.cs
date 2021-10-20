@@ -21,6 +21,7 @@ public class Test : MonoBehaviour
         {
             Debug.Log(array[i]);
         }
+
         for (int i = 4; i > 0; i--)
         {
             Debug.Log(array[i]);
