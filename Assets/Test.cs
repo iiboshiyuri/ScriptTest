@@ -9,12 +9,12 @@ public class Boss
     private int mp = 53; //mp
 
     //Magic関数
-    public void Magic()
+    public void Magic(int needmp)
     {
         
-        if (mp >= 5)
+        if (mp >= needmp)
         {
-            mp -= 5;
+            mp -= needmp;
             Debug.Log("魔法攻撃をした。残りMPは" + mp);
         }
         else
@@ -35,7 +35,7 @@ public class Test : MonoBehaviour
         for (int i = 1; i <= 11; i++)
         {
             // Magic関数を呼び出す
-            lastboss.Magic();
+            lastboss.Magic(5);
         }
 
         int[] array = new int[5];
